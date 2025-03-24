@@ -7,6 +7,32 @@ const documentBody = document.body;
 // Setting pages visiblity
 setDefaultPages(pagesList, "100%", "100%");
 
+// Main bg urls
+let homePageBg = "url(./assets/home/background-home-desktop.jpg)";
+let destinationPageBg = "url(./assets/destination/background-destination-desktop.jpg)";
+let crewPageBg = "url(./assets/crew/background-crew-desktop.jpg)";
+let techPageBg = "url(./assets/technology/background-technology-desktop.jpg)";
+
+function setActivePageBg() {
+  let activeTab = document.querySelector(".menu-list").querySelector(".active");
+  switch (navMenu.indexOf(activeTab)) {
+    case 0:
+      documentBody.style.backgroundImage = homePageBg;
+      break;
+    case 1:
+      documentBody.style.backgroundImage = destinationPageBg;
+      break;
+    case 2:
+      documentBody.style.backgroundImage = crewPageBg;
+      break;
+    case 3:
+      documentBody.style.backgroundImage = techPageBg;
+      break;
+  }
+}
+
+setActivePageBg();
+
 for(let i of navMenu) {
   i.onclick = () => {
     let clickedIndex = navMenu.indexOf(i);
@@ -20,19 +46,19 @@ for(let i of navMenu) {
     switch (clickedIndex) {
       case 0:
         pageSelector(pagesList, 0, "100%", "100%");
-        documentBody.style.backgroundImage = "url(./assets/home/background-home-desktop.jpg)";
+        documentBody.style.backgroundImage = homePageBg;
         break;
       case 1:
         pageSelector(pagesList, 1, "100%", "100%");
-        documentBody.style.backgroundImage = "url(./assets/destination/background-destination-desktop.jpg)";
+        documentBody.style.backgroundImage = destinationPageBg;
         break;
       case 2:
         pageSelector(pagesList, 2, "100%", "100%");
-        documentBody.style.backgroundImage = "url(./assets/crew/background-crew-desktop.jpg)";
+        documentBody.style.backgroundImage = crewPageBg;
         break;
       case 3:
         pageSelector(pagesList, 3, "100%", "100%");
-        documentBody.style.backgroundImage = "url(./assets/technology/background-technology-desktop.jpg)";
+        documentBody.style.backgroundImage = techPageBg;
         break;
     }
 
@@ -308,12 +334,22 @@ function changeTabletLayout(y) {
     techImgCollection[0].src = "./assets/technology/image-launch-vehicle-landscape.jpg";
     techImgCollection[1].src = "./assets/technology/image-spaceport-landscape.jpg";
     techImgCollection[2].src = "./assets/technology/image-space-capsule-landscape.jpg";
+    homePageBg = "url(./assets/home/background-home-tablet.jpg)";
+    destinationPageBg = "url(./assets/destination/background-destination-tablet.jpg)";
+    crewPageBg = "url(./assets/crew/background-crew-tablet.jpg)";
+    techPageBg = "url(./assets/technology/background-technology-tablet.jpg)";
     closeMenu.style.display = "none";
+    setActivePageBg();
   } else {
     techImgCollection[0].src = "./assets/technology/image-launch-vehicle-portrait.jpg";
     techImgCollection[1].src = "./assets/technology/image-spaceport-portrait.jpg";
     techImgCollection[2].src = "./assets/technology/image-space-capsule-portrait.jpg";
+    homePageBg = "url(./assets/home/background-home-desktop.jpg)";
+    destinationPageBg = "url(./assets/destination/background-destination-desktop.jpg)";
+    crewPageBg = "url(./assets/crew/background-crew-desktop.jpg)";
+    techPageBg = "url(./assets/technology/background-technology-desktop.jpg)";
     closeMenu.style.display = "none";
+    setActivePageBg();
   }
 }
 
@@ -321,11 +357,21 @@ function changeMobileLayout(x) {
   if(x.matches) {
     menuLayout.style.maxWidth = "0";
     menuLayout.style.height = "0";
+    homePageBg = "url(./assets/home/background-home-mobile.jpg)";
+    destinationPageBg = "url(./assets/destination/background-destination-mobile.jpg)";
+    crewPageBg = "url(./assets/crew/background-crew-mobile.jpg)";
+    techPageBg = "url(./assets/technology/background-technology-mobile.jpg)";
+    setActivePageBg();
   } else {
     menuLayout.style.maxWidth = "70%";
     menuLayout.style.height = "100%";
     menuLayout.style.transition = "unset";
     closeMenu.style.display = "none";
+    homePageBg = "url(./assets/home/background-home-desktop.jpg)";
+    destinationPageBg = "url(./assets/destination/background-destination-desktop.jpg)";
+    crewPageBg = "url(./assets/crew/background-crew-desktop.jpg)";
+    techPageBg = "url(./assets/technology/background-technology-desktop.jpg)";
+    setActivePageBg();
   }
 }
 
