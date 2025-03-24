@@ -722,11 +722,7 @@ hr {
   }
 
   .page-home-title {
-    font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    color: hsl(231, 77%, 90%);
+    font-size: 1.25rem;
   }
   
   .page-home-title-big {
@@ -743,6 +739,21 @@ hr {
 
   .page-destination-title {
     text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .destination-nav-list li {
+    margin-inline: 1rem;
+  }
+
+  .avg-distance-title, .travel-time-title {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .avg-distance, .travel-time {
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   #page-crew {
@@ -751,6 +762,7 @@ hr {
 
   .page-crew-title {
     text-align: center;
+    font-size: 1.25rem;
   }
 
   .crew-page-content-layout {
@@ -772,6 +784,7 @@ hr {
 
   .page-tech-title {
     text-align: center;
+    font-size: 1.25rem;
   }
 
   .tech-page-img-layout {
