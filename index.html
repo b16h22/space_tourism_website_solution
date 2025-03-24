@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Bellefair&family=Commissioner:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Commissioner:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+  
+  <title>Space tourism website</title>
+  
+</head>
+<body>
+  <div class="header">
+    <img class="logo-header" src="./assets/shared/logo.svg" alt="logo">
+    <img id="hamburger-menu" src="./assets/shared/icon-hamburger.svg" alt="menu">
+    <nav class="menu-layout">
+      <img id="close-menu" src="./assets/shared/icon-close.svg" alt="close">
+      <ul class="menu-list">
+        <li class="active"><b>00</b> Home</li>
+        <li><b>01</b> Destination</li>
+        <li><b>02</b> Crew</li>
+        <li><b>03</b> Technology</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pages-container">
+    <div class="pages" id="page-home">
+      <div class="page-home-text-content">
+        <h2 class="page-home-title">So, you want to travel to</h2>
+        <h1 class="page-home-title-big">Space</h1>
+        <p class="page-home-desc">Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!</p>
+      </div>
+      <button id="explore-btn">Explore</button>
+    </div>
+    <div class="pages" id="page-destination">
+      <h2 class="page-destination-title"><span class="page-destination-number">01</span> Pick Your Destination</h2>
+      <div class="page-destination-content">
+        <div class="planet-img-layout">
+          <img class="planet-img" src="./assets/destination/image-moon.webp" alt="moon">
+          <img class="planet-img" src="./assets/destination/image-mars.webp" alt="mars">
+          <img class="planet-img" src="./assets/destination/image-europa.webp" alt="europa">
+          <img class="planet-img" src="./assets/destination/image-titan.webp" alt="titan">
+        </div>
+        <div class="planet-text-content">
+          <nav class="destination-nav">
+            <ul class="destination-nav-list">
+              <li class="active">Moon</li>
+              <li>Mars</li>
+              <li>Europa</li>
+              <li>Titan</li>
+            </ul>
+          </nav>
+          <div class="destination-switcher-layout">
+            <div class="destination-pages" id="destination-moon">
+              <h1 class="destination-title">Moon</h1>
+              <p class="destination-desc">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+                regain perspective and come back refreshed. While you’re there, take in some history 
+                by visiting the Luna 2 and Apollo 11 landing sites.</p>
+              <hr>
+              <div class="destination-bottom-layout">
+                <div class="avg-distance-layout">
+                  <p class="avg-distance-title">Avg. distance</p>
+                  <h2 class="avg-distance">384,400 km</h2>
+                </div>
+                <div class="travel-time-layout">
+                  <p class="travel-time-title">Est. travel time</p>
+                  <h2 class="travel-time">3 days</h2>
+                </div>
+              </div>
+            </div>
+            <div class="destination-pages" id="destination-mars">
+              <h1 class="destination-title">Mars</h1>
+              <p class="destination-desc">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+                the tallest planetary mountain in our solar system. It’s two and a half times 
+                the size of Everest!</p>
+              <hr>
+              <div class="destination-bottom-layout">
+                <div class="avg-distance-layout">
+                  <p class="avg-distance-title">Avg. distance</p>
+                  <h2 class="avg-distance">225 mil. km</h2>
+                </div>
+                <div class="travel-time-layout">
+                  <p class="travel-time-title">Est. travel time</p>
+                  <h2 class="travel-time">9 months</h2>
+                </div>
+              </div>
+            </div>
+            <div class="destination-pages" id="destination-europa">
+              <h1 class="destination-title">Europa</h1>
+              <p class="destination-desc">The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+                winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+                ice skating, curling, hockey, or simple relaxation in your snug 
+                wintery cabin.</p>
+              <hr>
+              <div class="destination-bottom-layout">
+                <div class="avg-distance-layout">
+                  <p class="avg-distance-title">Avg. distance</p>
+                  <h2 class="avg-distance">628 mil. km</h2>
+                </div>
+                <div class="travel-time-layout">
+                  <p class="travel-time-title">Est. travel time</p>
+                  <h2 class="travel-time">3 years</h2>
+                </div>
+              </div>
+            </div>
+            <div class="destination-pages" id="destination-titan">
+              <h1 class="destination-title">Titan</h1>
+              <p class="destination-desc">The only moon known to have a dense atmosphere other than Earth, Titan 
+                is a home away from home (just a few hundred degrees colder!). As a 
+                bonus, you get striking views of the Rings of Saturn.</p>
+              <hr>
+              <div class="destination-bottom-layout">
+                <div class="avg-distance-layout">
+                  <p class="avg-distance-title">Avg. distance</p>
+                  <h2 class="avg-distance">1.6 bil. km</h2>
+                </div>
+                <div class="travel-time-layout">
+                  <p class="travel-time-title">Est. travel time</p>
+                  <h2 class="travel-time">7 years</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pages" id="page-crew">
+      <h2 class="page-crew-title"><span class="page-crew-number">02</span> Meet your crew</h2>
+      <div class="crew-page-content-layout">
+        <div class="crew-page-text-content">
+          <div class="crew-pages-layout">
+            <div class="crew-pages" id="crew-commander">
+              <h2 class="crew-pages-title-small">Commander</h2>
+              <h1 class="crew-pages-title-big">Douglas Hurley</h1>
+              <p class="crew-pages-desc">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                and former NASA astronaut. He launched into space for the third time as 
+                commander of Crew Dragon Demo-2.</p>
+            </div>
+            <div class="crew-pages" id="crew-mission-specialist">
+              <h2 class="crew-pages-title-small">Mission Specialist</h2>
+              <h1 class="crew-pages-title-big">Mark Shuttleworth</h1>
+              <p class="crew-pages-desc">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+                the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+                African to travel to space as a space tourist.</p>
+            </div>
+            <div class="crew-pages" id="crew-pilot">
+              <h2 class="crew-pages-title-small">Pilot</h2>
+              <h1 class="crew-pages-title-big">Victor Glover</h1>
+              <p class="crew-pages-desc">Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+                International Space Station. Glover is a commander in the U.S. Navy where 
+                he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+                station systems flight engineer.</p>
+            </div>
+            <div class="crew-pages" id="crew-flight-eng">
+              <h2 class="crew-pages-title-small">Flight Engineer</h2>
+              <h1 class="crew-pages-title-big">Anousheh Ansari</h1>
+              <p class="crew-pages-desc">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+                Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+                fly to the ISS, and the first Iranian in space. </p>
+            </div>
+          </div>
+          <div class="crew-page-selector">
+            <div class="crew-page-selector-bullets">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+        </div>
+        <div class="crew-img-layout">
+          <div class="crew-img">
+            <img src="./assets/crew/image-douglas-hurley.webp" alt="commander">
+          </div>
+          <div class="crew-img">
+            <img src="./assets/crew/image-mark-shuttleworth.webp" alt="mission specialist">
+          </div>
+          <div class="crew-img">
+            <img src="./assets/crew/image-victor-glover.webp" alt="pilot">
+          </div>
+          <div class="crew-img">
+            <img src="./assets/crew/image-anousheh-ansari.webp" alt="flight engineer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pages" id="page-tech">
+      <h2 class="page-tech-title"><span class="page-tech-number">03</span> Space launch 101</h2>
+      <div class="tech-page-content-layout">
+        <div class="tech-page-img-layout">
+          <img class="tech-img" src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="launch vehicle">
+          <img class="tech-img" src="./assets/technology/image-spaceport-portrait.jpg" alt="space port">
+          <img class="tech-img" src="./assets/technology/image-space-capsule-portrait.jpg" alt="space capsule">
+        </div>
+        <div class="tech-page-text-content">
+          <div class="tech-page-switcher">
+            <button class="tech-page-switch-btn active">1</button>
+            <button class="tech-page-switch-btn">2</button>
+            <button class="tech-page-switch-btn">3</button>
+          </div>
+          <div class="tech-pages-layout">
+            <div class="tech-pages" id="tech-pages-launch-vehicle">
+              <h3 class="tech-pages-title-small">The terminology...</h3>
+              <h1 class="tech-pages-title-big">Launch vehicle</h1>
+              <p class="tech-pages-desc">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+            <div class="tech-pages" id="tech-pages-space-port">
+              <h3 class="tech-pages-title-small">The terminology...</h3>
+              <h1 class="tech-pages-title-big">Spaceport</h1>
+              <p class="tech-pages-desc">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                by analogy to the seaport for ships or airport for aircraft. Based in the 
+                famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                of the Earth’s rotation for launch.</p>
+            </div>
+            <div class="tech-pages" id="tech-pages-space-capsule">
+              <h3 class="tech-pages-title-small">The terminology...</h3>
+              <h1 class="tech-pages-title-big">Space capsule
+              </h1>
+              <p class="tech-pages-desc">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+                capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+                you'll spend your time during the flight. It includes a space gym, cinema, 
+                and plenty of other activities to keep you entertained.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./space_tourism.js"></script>
+</body>
+</html>
