@@ -788,6 +788,7 @@ hr {
   .page-tech-title {
     text-align: center;
     font-size: 1.25rem;
+    margin-left: 0;
   }
 
   .tech-page-img-layout {
