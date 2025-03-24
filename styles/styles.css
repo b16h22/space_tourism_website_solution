@@ -734,7 +734,7 @@ hr {
   }
   
   .page-destination-content {
-    padding-inline: 2rem;
+    padding-inline: 0;
   }
 
   .page-destination-title {
@@ -742,7 +742,7 @@ hr {
   }
 
   #page-crew {
-    padding-inline: 4rem;
+    padding-inline: 2rem;
   }
 
   .page-crew-title {
@@ -763,7 +763,7 @@ hr {
   }
 
   .tech-pages-layout {
-    padding-inline: 4rem;
+    padding-inline: 2rem;
   }
 
   .page-tech-title {
