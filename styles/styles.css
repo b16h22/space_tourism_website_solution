@@ -78,7 +78,7 @@ body {
   font-weight: 500;
 }
 
-.menu-list li:hover {
+.menu-list li:hover, .menu-list li:active {
   border-bottom: 3px solid hsla(0, 0%, 100%, 0.5);
 }
 
@@ -144,7 +144,7 @@ body {
   transition: outline 200ms ease-out;
 }
 
-#explore-btn:hover {
+#explore-btn:hover, #explore-btn:active {
   outline: 5rem solid hsla(0, 0%, 100%, 0.1);
 }
 
@@ -221,7 +221,7 @@ body {
   border-bottom: 3px solid hsl(0, 0%, 100%);
 }
 
-.destination-nav-list li:hover {
+.destination-nav-list li:hover, .destination-nav-list li:active {
   border-bottom: 3px solid hsla(0, 0%, 100%, 0.5);
 }
 
@@ -375,7 +375,7 @@ hr {
   cursor: pointer;
 }
 
-.crew-page-selector-bullets button:hover {
+.crew-page-selector-bullets button:hover, .crew-page-selector-bullets button:active {
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -441,7 +441,7 @@ hr {
   transition: 200ms ease-in;
 }
 
-.tech-page-switch-btn:hover {
+.tech-page-switch-btn:hover, .tech-page-switch-btn:active {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 100%);
   color: hsl(0, 0%, 0%);
@@ -705,7 +705,7 @@ hr {
     margin-inline: 3rem 0;
   }
 
-  .menu-list li:hover {
+  .menu-list li:hover, .menu-list li:active {
     border-right: 3px solid hsla(0, 0%, 100%, 0.5);
     border-bottom: none;
   }
