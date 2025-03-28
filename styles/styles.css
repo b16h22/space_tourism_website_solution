@@ -5,6 +5,9 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.container {
   background-color: black;
   background-image: url(../assets/home/background-home-desktop.jpg);
   background-size: cover;

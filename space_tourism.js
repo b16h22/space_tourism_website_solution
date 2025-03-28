@@ -2,7 +2,7 @@
 
 const navMenu = Array.from(document.querySelectorAll(".menu-list li"));
 const pagesList = Array.from(document.querySelectorAll(".pages"));
-const documentBody = document.body;
+const container = document.querySelector(".container");
 
 // Setting pages visiblity
 setDefaultPages(pagesList, "100%", "100%");
@@ -17,16 +17,16 @@ function setActivePageBg() {
   let activeTab = document.querySelector(".menu-list").querySelector(".active");
   switch (navMenu.indexOf(activeTab)) {
     case 0:
-      documentBody.style.backgroundImage = homePageBg;
+      container.style.backgroundImage = homePageBg;
       break;
     case 1:
-      documentBody.style.backgroundImage = destinationPageBg;
+      container.style.backgroundImage = destinationPageBg;
       break;
     case 2:
-      documentBody.style.backgroundImage = crewPageBg;
+      container.style.backgroundImage = crewPageBg;
       break;
     case 3:
-      documentBody.style.backgroundImage = techPageBg;
+      container.style.backgroundImage = techPageBg;
       break;
   }
 }
@@ -46,19 +46,19 @@ for(let i of navMenu) {
     switch (clickedIndex) {
       case 0:
         pageSelector(pagesList, 0, "100%", "100%");
-        documentBody.style.backgroundImage = homePageBg;
+        container.style.backgroundImage = homePageBg;
         break;
       case 1:
         pageSelector(pagesList, 1, "100%", "100%");
-        documentBody.style.backgroundImage = destinationPageBg;
+        container.style.backgroundImage = destinationPageBg;
         break;
       case 2:
         pageSelector(pagesList, 2, "100%", "100%");
-        documentBody.style.backgroundImage = crewPageBg;
+        container.style.backgroundImage = crewPageBg;
         break;
       case 3:
         pageSelector(pagesList, 3, "100%", "100%");
-        documentBody.style.backgroundImage = techPageBg;
+        container.style.backgroundImage = techPageBg;
         break;
     }
 
@@ -81,7 +81,7 @@ exploreBtn.onclick = () => {
   pagesList[1].style.height = "100%";
   pagesList[1].style.opacity = "100%";
   pagesList[1].style.transition = "opacity 800ms";
-  documentBody.style.backgroundImage = "url(./assets/destination/background-destination-desktop.jpg)";
+  container.style.backgroundImage = "url(./assets/destination/background-destination-desktop.jpg)";
   
   for(let r of pagesList.filter((x) => x !== pagesList[1])) {
     r.style.visibility = "hidden";
